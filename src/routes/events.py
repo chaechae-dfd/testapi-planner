@@ -5,15 +5,15 @@ event_router=APIRouter(
     tags=["Events"]
 )
 
-@events_router.get("/")
+@event_router.get("/")
 async def get_all_events():
     return []
 
-@events_get.get("{id}")
+@event_router.get("{id}")
 async def get_event():
     return ""
 
-@events_router.post("/")
+@event_router.post("/")
 async def create_event():
     return ""
 
